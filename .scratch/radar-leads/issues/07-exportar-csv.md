@@ -2,7 +2,7 @@
 
 **What to build:** Botão de exportação que gera e baixa um arquivo CSV com todos os leads da busca atual. Colunas: nome, telefone, endereço, website, rating, categoria, coordenadas.
 
-**Blocked by:** 04 — Lead list + actions
+**Blocked by:** 05 — Stats panel
 
 **Status:** ready-for-agent
 

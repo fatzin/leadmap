@@ -6,6 +6,7 @@
 
 **Status:** ready-for-agent
 
+- [ ] Criar `SearchProvider` (React Context) para gerenciar estado global: `leads[]`, `currentQuery`, `viewMode (map | list)`, `isLoading`, `jobId`, `searchHistory[]`
 - [ ] Sidebar com SearchForm: campo de texto livre para query, slider de raio (km), botão "Buscar leads sem site"
 - [ ] Ao clicar "Buscar": POST para gosom API (`/api/v1/jobs`), recebe job ID
 - [ ] Polling a cada 3s (`GET /api/v1/jobs/{id}`) até status `completed`
