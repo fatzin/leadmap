@@ -2,7 +2,7 @@
 
 **What to build:** Lista de leads na sidebar com cards enriquecidos e botões de ação. WhatsApp (abre wa.me), Abrir site (se tiver), Ver detalhes (modal/popup com informações completas). ViewTabs para alternar entre visualização Mapa e Lista.
 
-**Blocked by:** 02 — Core search flow
+**Blocked by:** 02 — Core search flow, 03 — Mapa com markers
 
 **Status:** ready-for-agent
 
