@@ -1,0 +1,32 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    ports:
+      - "6900:6900"
+    volumes:
+      - ./app:/app
+      - /app/node_modules
+    environment:
+      - VITE_SCRAPER_URL=http://localhost:6901
+    depends_on:
+      - scraper
+
+  scraper:
+    build:
+      context: ./scraper
+      dockerfile: Dockerfile
+    ports:
+      - "6901:6901"
+    volumes:
+      - scraper-data:/gmapsdata
+    command:
+      - -data-folder=/gmapsdata
+      - -addr=:6901
+      - -lang=pt
+      - -c=2
+
+volumes:
+  scraper-data:
